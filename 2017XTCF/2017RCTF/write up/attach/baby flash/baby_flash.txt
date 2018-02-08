@@ -1,0 +1,51 @@
+   public function F_strcmp() : void
+   {
+      esp = int(esp - 44);
+      si32(int(li32(ebp)),ebp - 4);
+      si32(int(li32(ebp + 4)),x);
+      si32(int(li32(ebp - 4)),y);
+      si32(int(li32(x)),x);
+      si32(2,fib_lo);   // fib_lo = 2
+      si32(3,fib_hi);   // fib_hi = 3
+      si32(0,i);   // i = 0
+      si32(0,d);   // d = 0
+      while(int(li8(int(li32(y)))) != 0)  // while (*y != 0)
+      {
+         if(int(li8(int(li32(x)))) == 0)  // if (*x == 0)
+         {
+            break;
+         }
+         var i1:int = li8(int(li32(x)));
+         if(int(li8(int(li32(y)))) == i1)  // if (*y == *x)
+         {
+            var i0:int = li32(i);          // i0 = i
+            i2 = 1;                        // i2 = true
+            if(i0 != int(int(li32(fib_lo)) << 1))  // if (i != fib_lo * 2)
+            {
+               i2 = 0;                     // i2 = false
+            }
+            i0 = i2 & 1;             // i0 = i2
+            si8(i0,ebp - 17);        // e = i0
+            i0 = li32(i);                         
+            i0 = i0 + 1;                          
+            si32(i0,i);              // i = i + 1
+            i0 = li8(ebp - 17);
+            if(i0 != 0)              // if (e != 0)  // if (original_c == 2 * fib_lo)
+            {
+               si32(int(int(li32(y)) + 1),y);   // y = y + 1
+               si32(int(int(li32(fib_lo)) + int(li32(fib_hi))),d);  // d = fib_lo + fib_hi
+               si32(int(li32(fib_hi)),fib_lo);  // fib_lo = fib_hi
+               si32(int(li32(d)),fib_hi);  // fib_hi = d
+            }
+            si32(int(int(li32(y)) + 1),y);    // y = y + 1
+            si32(int(int(li32(x)) + 1),x);  // x = x + 1
+            continue;
+         }
+         break;
+      }
+      i0 = si8(li8(int(li32(x))));  // i0 = x
+      si32(int(int(si8(li8(int(li32(y))))) - i0),result_); // result_ = y?
+      si32(int(li32(result_)),result);   // result = 
+      eax = int(li32(result)); //
+   }
+}

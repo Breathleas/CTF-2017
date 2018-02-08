@@ -1,0 +1,406 @@
+.clearfix:after {
+  clear: both;
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+a:hover {
+	text-decoration: none;
+}
+.triangle-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #FFFFFF;
+  float: right;
+  margin: 8px 0 0 8px;
+}
+.triangle-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #FFFFFF;
+  float: right;
+  margin: 8px 0 0 8px;
+}
+.pt45 {
+  padding-top: 45px;
+}
+.mt25 {
+  margin-top: 26px;
+}
+/*下拉菜单*/
+.classify-btn {
+  width: 110px;
+  padding: 6px 10px;
+  background-color: #3fa065;
+  position: relative;
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+}
+.classify-btn > a {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.classify-btn > a i {
+  font-style: normal;
+}
+.classify-btn .list-item {
+  width: 90%;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  line-height: 20px;
+  border: 1px solid #3fa065;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+  background-color: #FFFFFF;
+  padding: 5px;
+  font-size: 13px;
+  z-index: 99999;
+}
+.classify-btn .list-item li {
+  padding: 5px 10px;
+}
+.classify-btn .list-item li > a,
+.classify-btn .list-item li a:hover,
+.classify-btn .list-item li a:active,
+.classify-btn .list-item li a:link {
+  color: #000000;
+}
+.classify-btn .list-item li:hover {
+  background-color: #f2f2f2;
+}
+.btn-child {
+  background-color: #FFFFFF;
+  border: 1px solid #e1e4e2;
+  border-radius: 5px;
+  padding: 5px 0;
+  min-width: 100%;
+}
+.btn-child hr {
+  height: 1px;
+  color: #cccccc;
+  background-color: #f1f1f1;
+  border: none;
+  margin: 5px 0;
+}
+.btn-child li {
+  padding: 0 15px;
+  line-height: 25px;
+}
+.btn-child li a {
+	display: block;
+	text-decoration: none;
+  color: #9b9b9b;
+}
+.btn-child li:hover,
+.btn-child li.active {
+  background-color: #e1e4e2;
+}
+.btn-child li:hover a,
+.btn-child li.active a {
+  color: #3fa065;
+}
+/*头部*/
+.header {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  background-color: #242321;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+}
+.header .header-container {
+  padding-right: 50px;
+}
+.header .header-container .header-logo {
+  float: left;
+  width: 240px;
+  background: url(http://image.3001.net/images/new/logo-big.png) no-repeat 45px center;
+}
+.header .header-container .header-logo a {
+  display: block;
+  width: 75%;
+  height: 65px;
+  margin: 0 auto;
+}
+.header .header-container .nav {
+  display: inline-block;
+}
+.header .header-container .nav .nav-child {
+  padding-left: 0px;
+}
+.header .header-container .nav .nav-child > li {
+  float: left;
+  padding: 0 25px;
+  line-height: 67px;
+  position: relative;
+}
+.header .header-container a, .header .header-container a:hover {
+	text-decoration: none;
+}
+.header .header-container .nav .nav-child > li > a {
+  color: #98a0a0;
+  font-size: 14px;
+}
+.header .header-container .nav .nav-child > li > a:hover, .header .header-container .nav .nav-child > li > a:active, .header .header-container .nav .nav-child > li > a:visited, .header .header-container .nav .nav-child > li > a:linked{
+	text-decoration: none;
+}
+.header .header-container .nav .nav-child > li .icon-betr,
+.header .header-container .nav .nav-child > li .icon-hot {
+  position: absolute;
+}
+.header .header-container .nav .nav-child > li .icon-betr {
+  width: 30px;
+  height: 15px;
+  background: url(http://image.3001.net/images/new/icon-batr.gif) no-repeat center;
+  left: 48px;
+  top: 15px;
+}
+.header .header-container .nav .nav-child > li .icon-hot {
+  width: 25px;
+  height: 14px;
+  background: url(http://image.3001.net/images/new/hotnew.gif) no-repeat left top;
+  left: 65px;
+  top: 15px;
+}
+.header .header-container .nav .nav-child > li.active > a {
+	color: #FFFFFF;
+}
+.header .header-container .nav .nav-child > li:hover > a {
+  color: #FFFFFF;
+}
+.header .header-container .read-classify {
+  position: relative;
+}
+.header .header-container .read-classify .triangle-down-04 {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #98a0a0;
+  margin: 31px 0 0 3px;
+}
+.header .header-container .read-classify .triangle-down-w {
+  border-top: 5px solid #FFFFFF;
+}
+.header .header-container .read-classify .dropdown-menu {
+  position: absolute;
+  top: 50px;
+  width: 405px;
+  left: 24px;
+  padding: 8px 10px;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 14px;
+  display: none;
+}
+.header .header-container .read-classify .dropdown-menu li {
+  padding: 10px 5px;
+  line-height: 25px;
+}
+.header .header-container .read-classify .dropdown-menu li b {
+  line-height: 22px;
+}
+.header .header-container .read-classify .dropdown-menu li a {
+  font-size: 13px;
+  display: inline-block;
+  padding: 5px 14px 5px 0;
+  margin-right: 14px;
+  background: url(http://image.3001.net/images/new/nav-line.gif) no-repeat right 13px;
+  color: #666666;
+}
+.header .header-container .read-classify .dropdown-menu li a:hover {
+  color: #3399ff;
+  text-decoration: underline;
+}
+.header .header-container .header-right {
+  float: right;
+  width: auto;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.header .header-container .loginSign {
+  float: right;
+  font-size: 13px;
+}
+.header .header-container .login-before {
+  line-height: 65px;
+}
+.header .header-container .login-before a {
+  color: #FFFFFF;
+  margin: 0 5px;
+}
+.header .header-container .login-after {
+  position: relative;
+}
+.header .header-container .login-after .user-info {
+  line-height: 56px;
+  color: #32b16c;
+  padding-top: 0;
+}
+.header .header-container .login-after .user-info .user-name {
+  padding-left: 20px;
+  background: url(http://image.3001.net/images/new/icon-people.png) no-repeat left center;
+}
+.header .header-container .login-after .user-info .triangle-down {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #32b16c;
+}
+.header .header-container .login-after .user-info:hover {
+  cursor: pointer;
+}
+.header .header-container .login-after .login-after-child {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  min-width: 125px;
+  display: none;
+}
+.header .header-container .btn-publish {
+  float: left;
+  width: 85px;
+  height: 30px;
+  margin-top: 18px;
+  text-align: center;
+  background-color: #43A588;
+  border-radius: 5px;
+  font-size: 13px;
+  position: relative;
+  margin-right: 20px;
+}
+.header .header-container .btn-publish > a {
+  line-height: 30px;
+}
+.header .header-container .btn-publish a:hover,
+.header .header-container .btn-publish a:active,
+.header .header-container .btn-publish a:link,
+.header .header-container .btn-publish a:visited {
+  color: #FFFFFF;
+}
+.header .header-container .btn-publish .btn-publish-child {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+  width: 85px;
+  display: none;
+  padding-top: 5px;
+  min-width: 130px;
+}
+.header .header-container .btn-publish .btn-publish-child li {
+  text-align: left;
+}
+.header .header-container .btn-publish .btn-publish-child li a {
+	display: block;
+  color: #9b9b9b;
+}
+.header .header-container .btn-publish .btn-publish-child li:hover,
+.header .header-container .btn-publish .btn-publish-child li.active {
+  background-color: #f5f5f5;
+}
+.header .header-container .btn-publish:hover {
+  background-color: #3fa065;
+}
+.header .header-container .btn-publish:hover .btn-publish-child {
+  display: block;
+}
+.header .header-container .nav-small {
+  display: none;
+}
+/*在1589像素以下的屏幕里*/
+@media (max-width: 1589px) {
+  .arti-list {
+    margin-left: 220px;
+  }
+}
+@media (max-width: 1390px) {
+  .header .header-container {
+    padding-right: 20px;
+  }
+  .header .header-container .header-logo {
+    width: 180px;
+    height: 65px;
+    background: url(http://image.3001.net/images/new/logo-small.png) no-repeat 35px center;
+  }
+  .header .header-container .header-logo a {
+    display: block;
+    height: 70px;
+  }
+  .header .header-container .nav .nav-child li {
+    padding-right: 10px;
+  }
+  .header .header-container .btn-publish .btn-publish-child {
+    min-width: 105px;
+  }
+}
+/*pad及移动端*/
+@media (max-width: 1100px) {
+  /*最上方的头部*/
+  .header .header-container .nav {
+    display: none;
+  }
+  .header .header-container .header-right {
+    display: none;
+  }
+  .header .header-container .nav-small {
+    display: block;
+    float: right;
+    margin-top: 15px;
+    width: 45px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: 'iconfont';
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #43A588;
+  }
+  .header .header-container .nav-small > a {
+    color: #FFFFFF;
+  }
+  .header .header-container .nav-small .nav-child {
+    position: absolute;
+    width: 120%;
+    left: -40px;
+    top: 65px;
+    text-align: left;
+    background-color: #FFFFFF;
+    display: none;
+  }
+  .header .header-container .nav-small .nav-child li {
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .header .header-container .nav-small .nav-child li > a {
+  	display: block;
+  	padding: 4px 30px;
+    color: #000000;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    text-decoration: none;
+  }
+  .header .header-container .nav-small .nav-child li.active {
+  	color: #3fa065;
+  }
+  .header .header-container .nav-small .nav-child li > a:hover, .header .header-container .nav-small .nav-child li > a:active, .header .header-container .nav-small .nav-child li > a:visited{
+    color: #3fa065;
+    text-decoration: none;
+  }
+  .header .header-container .nav-small:hover {
+    background-color: #3fa065;
+  }
+  .header .header-container .read-classify > a > b {
+    display: none;
+  }
+}

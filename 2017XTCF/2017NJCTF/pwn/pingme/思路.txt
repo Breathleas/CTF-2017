@@ -1,0 +1,4 @@
+栈上有start函数地址，dump出start，就可以找到main函数，dump出main函数，就可以找到plt表， plt表里面就是jmp got_address
+
+printf读自己的返回地址
+然后返回地址减5读下来disasm

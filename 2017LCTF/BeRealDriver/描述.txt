@@ -1,0 +1,5 @@
+http://re-1255475365.cossh.myqcloud.com/BeRealDriver-Production-stripped335307ec512cb38a851d4bcdc85f995c
+驾照考试越来越严了，好不容易找到一个包过的。去驾校报道，教练给了我一个U盘，里面放了个文件，还放了IDA 7.0的安装包。哇，大城市的驾校果然有钱，连IDA都送。就是密码要自己搞。
+教练给了个神秘网址：http://showmethepassword.l-ctf.org/driver-ranker.php
+driver 非正式提示：请认真阅读题目名、题目描述和题目文件
+Hint 1: https://en.wikipedia.org/wiki/Lane_departure_warning_system

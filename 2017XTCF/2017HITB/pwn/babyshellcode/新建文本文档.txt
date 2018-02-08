@@ -1,0 +1,4 @@
+hint for BABYSHELLCODE: Do you want to know the detail of SafeSEH? Reverse ntdll.dll!RtlIsValidHandler
+
+Hint for babyshellcode: 
+The algorithm is neither reversible nor z3-solvable

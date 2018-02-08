@@ -1,0 +1,8 @@
+bluetooth0
+150
+
+“报告！截获到了一个广播数据信息！”
+“恩恩！很好！smart bluetooth的数据包？”
+“是的！”
+请还原出data数据内容。
+flag{data16进制的表示}

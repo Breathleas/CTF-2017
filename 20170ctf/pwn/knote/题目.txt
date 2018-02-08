@@ -1,0 +1,10 @@
+Try this if you are good at kernel exploitation.
+
+nc 202.120.7.195 13134
+nc 202.120.7.196 13134
+
+KNOTE
+
+(Please test your exploit locally first. Do not disturb the server.)
+
+HINT: I generously mount pty/tty devices in the VM.
